@@ -10,9 +10,9 @@ public class CheckOddOrEven {
 
         int number = scanner.nextInt();
         if(number % 2==0){
-            System.out.println("The entered number is even");
+            System.out.println("The entered number is even:");
         }else{
-            System.out.println("The entered number is odd");
+            System.out.println("The entered number is odd:");
         }
     }
 
