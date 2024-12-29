@@ -1,13 +1,18 @@
 package org.example;
 
+import java.util.*;
+
 public class Reverse {
 
     static String str = "ABCD";
     static int length = str.length();
 
     public static void main(String[] args) {
-        methodOne();
-        methodTwo();
+//        methodOne();
+//        methodTwo();
+//        methodThree();
+        ;methodFour();
+
     }
 
     public static void methodOne(){
@@ -31,4 +36,26 @@ public class Reverse {
         System.out.println("Reverse text using toCharArray : "+ rev2);
     }
 
+    public static void methodThree() {
+        //3) StringBuffer
+        StringBuffer stringBuffer = new StringBuffer(str);
+        System.out.println(stringBuffer.reverse());
+    }
+
+    //4) Using Collections
+    public static void methodFour(){
+        char[] a= str.toCharArray();
+        List <Character> list = new ArrayList<Character>();
+
+        for(Character character:a){
+            list.add(character);
+        }
+
+        Collections.reverse(list);
+        ListIterator listIterator = list.listIterator();
+        while (listIterator.hasNext()){
+            System.out.print(listIterator.next());
+        }
+
+    }
 }
