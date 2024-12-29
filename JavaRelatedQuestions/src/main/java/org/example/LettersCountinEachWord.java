@@ -17,6 +17,8 @@ public class LettersCountinEachWord {
                 map.put(c,1);
             }
         }
+
         System.out.println(map);
     }
+    
 }
