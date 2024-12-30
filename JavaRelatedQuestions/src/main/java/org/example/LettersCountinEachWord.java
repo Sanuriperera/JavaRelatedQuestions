@@ -20,5 +20,5 @@ public class LettersCountinEachWord {
 
         System.out.println(map);
     }
-    
+
 }
