@@ -31,7 +31,7 @@ public class ReplcaeVowelsSpecialChar {
 //            System.out.print(charArray[i]);
 //        }
 
-        String repalceTexat =givenText.replaceAll("[AEIOUaeiou]","*");
-        System.out.println(repalceTexat);
+        String repalceTextat =givenText.replaceAll("[AEIOUaeiou]","*");
+        System.out.println(repalceTextat);
     }
 }
